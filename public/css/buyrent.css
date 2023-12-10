@@ -1,0 +1,69 @@
+/* Add this CSS to your <head> section or in a separate .css file */
+
+/* Style for the page body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  /* Style for the heading */
+  h1 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  /* Style for the property table */
+  #property-table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for table headings */
+  #property-table th {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+  }
+  
+  /* Style for table rows */
+  #property-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  /* Style for the "Buy" button */
+  .buy-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .rent-button:hover {
+    background-color: #45a049;
+  }
+  .rent-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .rent-button:hover {
+    background-color: #45a049;
+  }
+  

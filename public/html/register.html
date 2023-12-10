@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PropertyHub - Sign Up</title>
+  <link rel="stylesheet" href="../css/signup.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">PropertyHub</a>
+    </div>
+    <!-- Other navigation links -->
+  </nav>
+
+  <!-- Signup Form Section -->
+  <section class="signup-form">
+    <div class="form-container">
+      <h2>Sign Up for PropertyHub</h2>
+      <form id="signup" method="post" action="/register-user" >
+        <label for="name">Username</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- <main>
+    <form method="post" action="/register-user" id="signup">
+        <div id="signup" class="container">
+            <div class="info">
+                <center><h2>Sign up to TravelPartner</h2></center> 
+                <label>Email : </label><br>
+                <input type="text" id="email" name="email" placeholder="E-mail" onfocusout="validateEmail()"><br>
+                <label>Username : </label><br>
+                <input type="text" id="name" name="name" placeholder="Username"><br>
+                <label>Password : </label><br>
+                <input type="password" id="password" name="password" placeholder="Password" onfocusout="validatePassword()">
+                <br><br>
+                <button type="submit" onclick="validatePassword()" ><div class="btn">Sign-up</div></button>
+                <a href="/login">Already registered?</a>
+                
+            </div>
+            
+        </div>
+        
+    </form>
+</main> -->
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2023 PropertyHub. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+
+  <script src="../JavaScript/validate.js"></script>
+</body>
+</html>

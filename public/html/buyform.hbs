@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... Your head content ... -->
+    <link rel="stylesheet" href="../css/buyform.css">
+</head>
+<body>
+   <h1>Buy Property</h1>
+   <form id="buy-form" method="post" action="/delete-property?id={{findProperty._id}}">
+     <div class="form-group">
+       <label for="name">Name:</label>
+       <input type="text" id="name" name="name" required>
+     </div>
+     <div class="form-group">
+       <label for="mobile">Mobile Number:</label>
+       <input type="tel" id="mobile" name="mobile" required>
+     </div>
+     <div class="form-group">
+       <label for="email">Email:</label>
+       <input type="email" id="email" name="email" required>
+     </div>
+     <div class="form-group">
+       <label for="payment-method">Payment Method:</label>
+       <select id="payment-method" name="payment-method">
+         <option value="cash">Cash</option>
+         <option value="card">Card</option>
+         <option value="loan">Loan</option>
+         <option value="cheque">Cheque</option>
+       </select>
+     </div>
+     <!-- Add a hidden input field to store the property ID -->
+     <button type="submit">Submit</button>
+   </form>
+   {{!-- <script src="../JavaScript/buyform.js"></script> --}}
+   <!-- <script>
+    // Add a click event listener to the button
+    document.getElementById("redirectButton").addEventListener("click", function() {
+        // Redirect to the /login page
+        window.location.href = "/delete";
+    });
+    </script> -->
+</body>
+</html>

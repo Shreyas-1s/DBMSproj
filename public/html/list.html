@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/list.css">
+    <title>Property Listing Form</title>
+</head>
+<body>
+    <h1>Property Listing Form</h1>
+    <form action="/submit-listing" method="POST">
+        <div>
+            <label for="location">Property Location:</label>
+            <input type="text" id="location" name="location" required>
+        </div>
+        <div>
+            <label for="status">Status:</label>
+            <select id="status" name="status" required>
+                <option value="buy">Buy</option>
+                <option value="rent">Rent</option>
+            </select>
+        </div>
+        <div>
+            <label for="type">Type:</label>
+            <select id="type" name="type" required>
+                <option value="commercial">Commercial</option>
+                <option value="residential">Residential</option>
+            </select>
+        </div>
+        <div>
+            <label for="value">Value:</label>
+            <input type="number" id="value" name="value" required>
+        </div>
+        <div>
+            <button type="submit">Submit Listing</button>
+        </div>
+    </form>
+</body>
+
+</html>

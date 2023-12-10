@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... Your head content ... -->
+    <link rel="stylesheet" href="../css/buyrent.css">
+</head>
+<body>
+   <h1>List of Buy Properties</h1>
+   <table id="property-table">
+     <thead>
+       <tr>
+         <th>Location</th>
+         <th>Status</th>
+         <th>Type</th>
+         <th>Value</th>
+         <th>Action</th>
+       </tr>
+     </thead>
+     <tbody>
+       {{#each properties}}
+       <tr>
+         <td>{{location}}</td>
+         <td>{{status}}</td>
+         <td>{{type}}</td>
+         <td>{{value}}</td>
+         <td><a class="buy-button" href="/buyform?id={{_id}}">Buy</a></td>
+       </tr>
+       {{/each}}
+     </tbody>
+   </table>
+   {{!-- <script>
+    // Add a click event listener to all elements with class "buy-button"
+    const buyButtons = document.querySelectorAll('.buy-button');
+    buyButtons.forEach(button => {
+      button.addEventListener("click", function() {
+        // Redirect to the /buyform page
+        window.location.href = "/buyform";
+      });
+    });
+</script> --}}
+</body>
+</html>

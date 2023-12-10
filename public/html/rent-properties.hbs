@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ... Your head content ... -->
+    <link rel="stylesheet" href="../css/buyrent.css">
+</head>
+<body>
+   <h1>List of Rent Properties</h1>
+   <table id="property-table">
+     <thead>
+       <tr>
+         <th>Location</th>
+         <th>Status</th>
+         <th>Type</th>
+         <th>Value</th>
+         <th>Action</th>
+       </tr>
+     </thead>
+     <tbody>
+       {{#each properties}}
+       <tr>
+         <td>{{location}}</td>
+         <td>{{status}}</td>
+         <td>{{type}}</td>
+         <td>{{value}}</td>
+         <td><a class="rent-button" href="/rentform?id={{_id}}">Rent</a></td>
+       </tr>
+       {{/each}}
+     </tbody>
+   </table>
+  
+</body>
+</html>
